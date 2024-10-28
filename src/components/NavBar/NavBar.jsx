@@ -51,8 +51,8 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <CiSearch className="text-2xl mr-7"/>
-                    <TbShoppingBagCheck className="text-2xl mr-5"/>
+                    <CiSearch className="text-2xl mr-7" />
+                    <TbShoppingBagCheck className="text-2xl mr-5" />
                     <Link to={'/'} className="btn border-2 border-[#FF3811] text-[#FF3811]">Appoinment</Link>
                 </div>
             </nav>

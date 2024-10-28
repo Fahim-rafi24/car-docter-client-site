@@ -6,7 +6,7 @@ const Error = () =>{
     return(
         <>
         <section className='flex justify-center mt-[10%]'>
-        <img src={errorImg} alt="" />
+        <img src={errorImg}/>
         </section>
         </>
     )

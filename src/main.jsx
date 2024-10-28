@@ -8,6 +8,8 @@ import Register from './components/Register/Register.jsx';
 import Error from './components/Error/Error.jsx';
 import Home from './components/Home/Home.jsx';
 import ContactUs from './components/ContactUs/ContactUs.jsx';
+import ServiceDetails from './components/ServiceDetails/ServiceDetails.jsx';
+import PrivateRoot from './PrivateRoot/PrivateRoot.jsx';
 
 
 
@@ -17,8 +19,8 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement : <Error></Error>,
-    children:[
+    errorElement: <Error></Error>,
+    children: [
       {
         path: '/',
         element: <Home></Home>,
@@ -34,6 +36,11 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs></ContactUs>,
+      },
+      // private route
+      {
+        path: '/service_details/:id',
+        element: <PrivateRoot> <ServiceDetails></ServiceDetails> </PrivateRoot>,
       },
     ],
   },
