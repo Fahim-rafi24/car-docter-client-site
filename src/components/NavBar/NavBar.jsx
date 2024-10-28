@@ -16,7 +16,7 @@ const NavBar = () => {
         <li className="mr-2 text-[17px]"><NavLink to={'/about'}>About</NavLink></li>
         <li className="mr-2 text-[17px]"><NavLink to={'/service'}>Services</NavLink></li>
         <li className="mr-2 text-[17px]"><NavLink to={'/login'}>Login</NavLink></li>
-        <li className="mr-2 text-[17px]"><NavLink to={'/'}>Contact</NavLink></li>
+        <li className="mr-2 text-[17px]"><NavLink to={'/contact'}>Contact</NavLink></li>
     </>
     return (
         <>
