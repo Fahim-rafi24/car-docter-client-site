@@ -20,7 +20,7 @@ const Home = () => {
             {/* home banner */}
             <section className=''>
                 <HomeSlider></HomeSlider>
-                <div className='relative bottom-[50vh] left-[23vw] text-white w-fit border rounded-xl p-5'>
+                <div className='relative bottom-[50vh] left-[23vw] text-white w-fit p-5'>
                     <h2 className='text-5xl font-bold'>
                         Affordable <br />Price For <br />Car Servicing
                     </h2>

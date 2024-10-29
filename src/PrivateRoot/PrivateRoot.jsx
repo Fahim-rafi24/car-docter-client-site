@@ -9,14 +9,12 @@ const i = 10;
 
 
 function PrivateRoot({ children }) {
-    const idLocation = useParams();
-    console.log(idLocation.id)
 
     if (i == 100) {
         return children;
     }
     else{
-        return <Navigate to={`/service_details/error/${idLocation.id}`} />;
+        return <Navigate to={`/`} />;
     }
 }
 

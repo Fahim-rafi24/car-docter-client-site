@@ -42,12 +42,11 @@ const router = createBrowserRouter([
       // private route
       {
         path: '/service_details/:id',
-        element: <PrivateRoot> <ServiceDetails></ServiceDetails> </PrivateRoot>,
+        element: <PrivateRoot><ServiceDetails></ServiceDetails></PrivateRoot>,
       },
       {
         path: '/add_service',
-        // element: <PrivateRoot> <AddNewService></AddNewService> </PrivateRoot>,
-        element: <AddNewService></AddNewService>,
+        element: <PrivateRoot><AddNewService></AddNewService></PrivateRoot>,
       },
     ],
   },

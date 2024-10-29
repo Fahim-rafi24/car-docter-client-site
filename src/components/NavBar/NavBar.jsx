@@ -31,6 +31,9 @@ const NavBar = () => {
         {/* its a private root */}
         <li className="mr-2 text-[17px]"><NavLink to={'/add_service'}>Add New Service</NavLink></li>
     </>
+
+
+
     return (
         <>
             <nav className="navbar bg-base-100 w-5/6 mx-auto">

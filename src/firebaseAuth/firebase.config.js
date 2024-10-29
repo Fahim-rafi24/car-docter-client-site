@@ -9,12 +9,12 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 const firebaseConfig = {
     // apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-    apiKey: "AIzaSyCwRp5UZl_eyJXxdqbJr2aP3XwakQdSNzA",
-    authDomain: "car-doctor-69a60.firebaseapp.com",
-    projectId: "car-doctor-69a60",
-    storageBucket: "car-doctor-69a60.appspot.com",
-    messagingSenderId: "980993606707",
-    appId: "1:980993606707:web:c91556c9a7a82b15a48f46",
+    apiKey: 'AIzaSyCwRp5UZl_eyJXxdqbJr2aP3XwakQdSNzA' ,
+    authDomain: 'car-doctor-69a60.firebaseapp.com' ,
+    projectId: 'car-doctor-69a60' ,
+    storageBucket: 'car-doctor-69a60.appspot.com' ,
+    messagingSender: '980993606707' ,
+    appId: '1:980993606707:web:c91556c9a7a82b15a48f46' ,
 };
 
 
