@@ -10,6 +10,8 @@ import Home from './components/Home/Home.jsx';
 import ContactUs from './components/ContactUs/ContactUs.jsx';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails.jsx';
 import PrivateRoot from './PrivateRoot/PrivateRoot.jsx';
+import AddNewService from './components/AddNewService/AddNewService.jsx';
+import UserAuthContext from './UserAuthContext/UserAuthContext.jsx';
 
 
 
@@ -42,6 +44,11 @@ const router = createBrowserRouter([
         path: '/service_details/:id',
         element: <PrivateRoot> <ServiceDetails></ServiceDetails> </PrivateRoot>,
       },
+      {
+        path: '/add_service',
+        // element: <PrivateRoot> <AddNewService></AddNewService> </PrivateRoot>,
+        element: <AddNewService></AddNewService>,
+      },
     ],
   },
 ]);
@@ -52,6 +59,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <UserAuthContext>
     <RouterProvider router={router} />
+    </UserAuthContext>
   </StrictMode>,
 )

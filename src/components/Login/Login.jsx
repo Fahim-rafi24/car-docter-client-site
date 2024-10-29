@@ -2,8 +2,29 @@ import { Link } from "react-router-dom"
 import HomeImg from '../../../public/assets_Img/logo.svg'
 import LoginImg from '../../../public/assets_Img/images/login/login.svg'
 import { FacebookLoginButton, GoogleLoginButton, LinkedInLoginButton } from "react-social-login-buttons";
+import { useContext } from "react";
+import { UserContext } from "../../UserAuthContext/UserAuthContext";
+
+
+
+
+
 
 const Login = () => {
+    const {LoginUser} = useContext(UserContext)
+
+
+    const handleLoginFormClicked= (e) =>{
+        e.preventDefault();
+        const form = e.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        // console.log(email, password)
+        LoginUser(email, password)
+        .then(result => console.log(result.user))
+        .catch(error => console.log(error))
+    }
+
     return (
         <section>
             <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -22,7 +43,7 @@ const Login = () => {
                             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                                 Log in to your account
                             </h1>
-                            <form className="space-y-4 md:space-y-6" action="#">
+                            <form onSubmit={handleLoginFormClicked} className="space-y-4 md:space-y-6" action="#">
                                 <div>
                                     <label
                                         htmlFor="email"
